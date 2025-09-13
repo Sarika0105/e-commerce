@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">E-Shop</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Checkout</h1>
+    <form id="checkoutForm" class="checkout-form">
+      <fieldset>
+        <legend>Shipping Info</legend>
+        <label>Name <input required /></label>
+        <label>Address <input required /></label>
+        <label>City <input required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <label>Card Number <input required /></label>
+        <label>Expiry <input required /></label>
+        <label>CVV <input required /></label>
+      </fieldset>
+      <button type="submit" class="btn">Place Order</button>
+      <p id="checkoutMessage" class="muted"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">© <span id="year3"></span> E-Shop</footer>
+  <script src="app.js"></script>
+</body>
+</html>

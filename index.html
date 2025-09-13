@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <button id="navToggle" class="hamburger">☰</button>
+        <a href="index.html" class="logo">E-Shop</a>
+      </div>
+      <nav class="nav-menu">
+        <input id="searchInput" type="search" placeholder="Search..." />
+        <select id="categorySelect">
+          <option value="all">All</option>
+        </select>
+        <select id="sortSelect">
+          <option value="default">Sort</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+        </select>
+        <a href="cart.html" class="cart-link">🛒 <span id="cartCount">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Shop Smarter</h1>
+      <p>Find products you love with fast checkout.</p>
+      <a class="btn" href="#catalog">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Product Catalog -->
+  <main class="container">
+    <section id="catalog" class="section">
+      <h2>Products</h2>
+      <p id="resultCount" class="muted"></p>
+      <div id="productGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> E-Shop</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
